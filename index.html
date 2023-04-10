@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--fontawesome icons-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+
+    <!--Icon icons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Responsive-->
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <!--Custom JS-->
+    <script defer src="./custom.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <svg
+        width="139"
+        viewBox="0 0 139 74"
+        class="logo"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_353_2)">
+          <path
+            d="M15.921 6.29941C13.0131 6.29941 10.5413 7.60274 8.36036 10.2094C7.05178 11.7299 6.39749 14.047 6.39749 17.0881V31.8591H0V20.7808C0 15.5675 0.0726987 12.9609 0.290795 12.9609C0.290795 12.3816 0.726987 11.1507 1.45397 9.2681C2.25366 7.60274 3.27144 6.1546 4.58002 4.77886C6.25209 3.18591 7.77877 2.0998 9.23274 1.52055C11.4137 0.506849 13.6674 0 16.1391 0C18.6109 0 20.8645 0.506849 23.0455 1.52055C24.4268 2.0998 25.9535 3.18591 27.6255 4.77886C28.9341 6.1546 30.0246 7.60274 30.7516 9.2681C31.4786 11.1507 31.9147 12.3816 31.9147 12.9609C32.1328 12.9609 32.2055 15.5675 32.2055 20.7808V31.8591H25.7354V17.0157C25.7354 13.9746 25.0811 11.6575 23.8452 10.137C21.7369 7.53033 19.1925 6.22701 16.2845 6.22701H15.921V6.29941ZM12.9404 15.4227H19.2652V31.8591H12.9404V15.4227Z"
+            fill="#19A4E6"
+          />
+          <path
+            d="M51.6161 0H51.8342C56.7777 0 60.9215 2.0274 64.4111 6.00978C66.6647 9.05088 67.7552 12.3092 67.7552 15.8571V16.0744C67.7552 20.998 65.7197 25.1252 61.5758 28.5284C58.5952 30.773 55.3237 31.8591 51.7615 31.8591H51.5434C46.6726 31.8591 42.4561 29.8317 38.9665 25.8493C37.7306 24.184 36.931 22.591 36.4221 21.1429C35.8405 19.4051 35.5497 17.6673 35.5497 15.9295V15.7123C35.5497 10.9335 37.5126 6.80626 41.511 3.33072C44.2008 1.37573 46.6726 0.362035 48.9263 0.072407C49.5805 0.072407 50.5256 0 51.6161 0ZM41.9472 15.9295C41.9472 18.681 43.0377 21.1429 45.2186 23.2427C47.1815 24.908 49.217 25.7045 51.3253 25.7045H51.9796C53.7244 25.7045 55.4691 25.1252 57.2139 23.9667C59.0314 22.591 60.2673 20.9256 60.9215 18.8258C61.1396 18.2466 61.285 17.3777 61.3577 16.002C61.3577 13.2505 60.2673 10.8611 58.159 8.83366C56.1961 7.09589 54.0152 6.22701 51.6161 6.22701C48.8536 6.22701 46.3818 7.38552 44.2008 9.70254C43.3285 10.8611 42.7469 11.8748 42.4561 12.7436C42.1653 13.7573 41.9472 14.8434 41.9472 15.9295Z"
+            fill="#19A4E6"
+          />
+          <path
+            d="M17.4477 42.0685H32.2782V74H25.8808V48.2231H20.1376H18.7563C15.5575 48.2231 13.8128 48.3679 13.4493 48.6575C11.5591 49.1644 9.88703 50.2505 8.57845 51.9882C7.12448 54.0156 6.47019 56.043 6.47019 57.998C6.47019 60.4599 7.41527 62.7769 9.37814 64.8043C10.6867 66.0352 11.7772 66.7593 12.7223 67.0489C13.6674 67.5558 15.2667 67.773 17.5204 67.773H21.955V73.9276H16.5753C12.5769 73.9276 9.23274 72.9139 6.47019 70.8141C4.50732 69.2211 3.12605 67.8454 2.47176 66.5421C0.799686 63.9354 0 61.2564 0 58.5049V57.5636C0 53.7984 1.45398 50.2505 4.36193 47.0646C6.1067 45.3992 7.56067 44.3131 8.65115 43.8787C9.45084 43.4442 10.5413 43.0098 11.9953 42.6477C13.2312 42.2133 15.0486 42.0685 17.4477 42.0685Z"
+            fill="#C1C1C1"
+          />
+          <path
+            d="M88.5471 42.0685H103.378V74H96.9801V48.2231H91.2369H89.8556C86.6569 48.2231 84.9121 48.3679 84.5486 48.6575C82.6585 49.1644 80.9864 50.2505 79.6778 51.9882C78.2238 54.0156 77.5696 56.043 77.5696 57.998C77.5696 60.4599 78.5146 62.7769 80.4775 64.8043C81.7861 66.0352 82.8766 66.7593 83.8217 67.0489C84.7667 67.5558 86.3661 67.773 88.6198 67.773H93.0544V73.9276H87.6747C83.6763 73.9276 80.3321 72.9139 77.5696 70.8141C75.6067 69.2211 74.2254 67.8454 73.5711 66.5421C71.8991 63.9354 71.0994 61.2564 71.0994 58.5049V57.5636C71.0994 53.726 72.5533 50.1781 75.4613 46.9922C77.2061 45.3268 78.66 44.2407 79.7505 43.8063C80.5502 43.3718 81.6407 42.9374 83.0947 42.5753C84.3305 42.2133 86.148 42.0685 88.5471 42.0685Z"
+            fill="#C1C1C1"
+          />
+          <path
+            d="M122.643 48.3679C119.735 48.3679 117.263 49.6712 115.082 52.2779C113.774 53.7984 113.119 56.1154 113.119 59.1565V74H106.649V62.8493C106.649 57.636 106.722 55.0293 106.94 55.0293C106.94 54.4501 107.376 53.2192 108.103 51.3366C108.903 49.6712 109.921 48.2231 111.229 46.8473C112.901 45.2544 114.428 44.1683 115.882 43.589C117.99 42.5753 120.316 42.0685 122.715 42.0685C125.187 42.0685 127.441 42.5753 129.622 43.589C131.003 44.1683 132.53 45.2544 134.202 46.8473C135.51 48.2231 136.601 49.6712 137.328 51.3366C138.055 53.2192 138.491 54.4501 138.491 55.0293C138.709 55.0293 138.782 57.636 138.782 62.8493V74H132.312V59.0841C132.312 56.043 131.657 53.726 130.422 52.2055C128.313 49.5988 125.769 48.2955 122.861 48.2955H122.643V48.3679ZM119.662 57.4912H125.987V74H119.662V57.4912Z"
+            fill="#C1C1C1"
+          />
+          <path
+            d="M64.193 47.9335C62.8117 46.4129 61.5758 45.2544 60.34 44.5303C58.159 43.2994 56.1961 42.5753 54.4514 42.3581C53.7971 42.1409 51.3253 42.0685 47.0361 42.0685H35.5497V48.2955H50.5983C53.5063 48.2955 55.7599 48.9472 57.3593 50.2505C58.2317 50.8297 59.0314 51.6262 59.6857 52.6399C60.8488 54.4501 61.4304 56.3327 61.4304 58.1428C61.4304 60.0254 60.7761 61.908 59.4676 63.863C58.3771 65.3835 56.705 66.6145 54.3787 67.3385C53.5063 67.6282 52.2704 67.773 50.671 67.773H42.0926V57.4912H35.7678V67.773H35.6224V73.8552H35.7678V73.9276H36.3494H42.1653H50.0167C53.7244 73.9276 56.4869 73.4931 58.3044 72.5518C62.1574 70.8865 64.92 68.0626 66.6647 64.2974C67.5371 62.3425 67.9733 60.2426 67.9733 57.998C67.8279 54.2329 66.5921 50.9021 64.193 47.9335Z"
+            fill="#C1C1C1"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_353_2">
+            <rect width="139" height="74" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      <nav class="nav">
+        <ul class="nav-lists">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="btn btn-cta">Contact</button>
+      </nav>
+
+      <button class="btn-mobile">
+        <span class="menu-icon"><ion-icon name="menu-outline"></ion-icon></span>
+        <span class="close-icon"
+          ><ion-icon name="close-outline"></ion-icon
+        ></span>
+      </button>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-content grid grid-col-2">
+        <div class="hero-text">
+          <p class="greetngs">Hi!👋</p>
+          <p class="author">I'm Mohamed Adam</p>
+
+          <h1 class="heading-primary">
+            A Frontend <span class="highlight">Developer</span>
+          </h1>
+          <p class="description">
+            I love building beautiful websites , web apps and everything in
+            between.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Let's Talk</button>
+            <button class="btn btn-outline">Download Resume</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./img/hero-image.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <div class="skills-content">
+        <div class="skills-description">
+          <h2 class="heading-secondary">my skills</h2>
+          <p>
+            I don’t like to define myself by the work I’ve done. I define myself
+            by the work I want to do. Skills can be taught, personality is
+            inherent. I prefer to keep learning, continue challenging myself,
+            and do interesting things that matter.
+          </p>
+
+          <!-- <div class="image-container">
+            <img src="./img/languages.jpg" alt="" srcset="" />
+          </div> -->
+
+          <!-- <h3>Design Skills</h3>
+          <article class="design">
+            <span> Adobe XD </span>
+            <span>
+              <ion-icon class="language-logo" name="logo-figma"></ion-icon>
+              Figma
+            </span>
+            <span> Photoshop </span>
+          </article> -->
+        </div>
+
+        <ul class="lanugages">
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-html5"></ion-icon>
+            </span>
+            <span>HTML5</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-css3"></ion-icon
+            ></span>
+            <span>CSS3 </span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-javascript"></ion-icon>
+            </span>
+            <span>JAVASCRIPT</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-wordpress"></ion-icon>
+            </span>
+            <span> Wordpress</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-sass"></ion-icon>
+            </span>
+            <span> Sass</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-sass"></ion-icon>
+            </span>
+            <span> Bootstrap</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-github"></ion-icon>
+            </span>
+            <span> Git</span>
+          </li>
+          <li class="language">
+            <span class="language-icon">
+              <ion-icon class="language-logo" name="logo-figma"></ion-icon>
+            </span>
+            <span> Figma</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="academic" class="academic container">
+      <div class="academic-content grid grid-col-2">
+        <div class="experience">
+          <h2 class="heading-secondary">experience</h2>
+          <ul class="academic-lists">
+            <li class="academic-item">
+              <span class="date">Now</span>
+              <span class="company">
+                <h3>Freelancer</h3>
+                <span class="position">Frontend developer</span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2023</span>
+              <span class="company">
+                <h3>Fujitsu</h3>
+                <span class="position">IT Technical Support </span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2022</span>
+              <span class="company">
+                <h3>
+                  National center for <br />
+                  Gastroenterology
+                </h3>
+                <span class="position">IT- Technical Support</span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2021</span>
+              <span class="company">
+                <h3>Ibn Sina Hospital</h3>
+                <span class="position">IT- Technical Support </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="certifications">
+          <h2 class="heading-secondary">Certifications</h2>
+          <ul class="academic-lists">
+            <li class="academic-item">
+              <span class="date">2022</span>
+              <span class="company">
+                <h3>Udemy</h3>
+                <span class="position">Responsive web design </span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2022</span>
+              <span class="company">
+                <h3>Coursera</h3>
+                <span class="position">Foundation of User Experience </span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2022</span>
+              <span class="company">
+                <h3>Coursera</h3>
+                <span class="position">Technical Support Fundamentals</span>
+              </span>
+            </li>
+            <li class="academic-item">
+              <span class="date">2019</span>
+              <span class="company">
+                <h3>Imam Al Hadi College</h3>
+                <span class="position">Bachelor of computer Science </span>
+              </span>
+            </li>
+
+            <li class="academic-item">
+              <span class="date">2019</span>
+              <span class="company">
+                <h3>Nizam College - Osmania University</h3>
+                <span class="position">Diploma of Computer Science </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <h2 class="heading-secondary heading-portfolio">
+        Let’s have a look at <br />
+        my <span class="highlight">portfolio</span>
+      </h2>
+      <hr />
+
+      <div class="portfolio-content">
+        <article class="grid grid-col-2">
+          <div class="website-details">
+            <h3 class="website-title">Realstate website</h3>
+
+            <p class="website-description">
+              A landing page for realstate company which show their properties
+              (Villa, Apartments and so on)
+            </p>
+            <h4>Technologies</h4>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>javascript</span>
+            <a href="#"
+              >View Prject
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </a>
+          </div>
+
+          <img class="website-mockup" src="./img/btn.png" alt="" />
+        </article>
+
+        <article class="grid grid-col-2">
+          <img class="website-mockup" src="./img/monifod.png" alt="" />
+
+          <div class="website-details">
+            <h3 class="website-title">Realstate website</h3>
+            <p class="website-description">
+              A landing page for realstate company which show their properties
+              (Villa, Apartments and so on)
+            </p>
+            <h4>Technologies</h4>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>javascript</span>
+            <a href="#"
+              >View Prject
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </a>
+          </div>
+        </article>
+
+        <article class="grid grid-col-2">
+          <div class="website-details">
+            <h3 class="website-title">Realstate website</h3>
+            <p class="website-description">
+              A landing page for realstate company which show their properties
+              (Villa, Apartments and so on)
+            </p>
+            <h4>Technologies</h4>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>javascript</span>
+            <a href="#"
+              >View Prject
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </a>
+          </div>
+
+          <img class="website-mockup" src="./img/realstate.png" alt="" />
+        </article>
+
+        <article class="grid grid-col-2">
+          <img class="website-mockup" src="./img/programming.png" alt="" />
+
+          <div class="website-details">
+            <h3 class="website-title">Realstate website</h3>
+            <p class="website-description">
+              A landing page for realstate company which show their properties
+              (Villa, Apartments and so on)
+            </p>
+            <h4>Technologies</h4>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>javascript</span>
+            <a href="#"
+              >View Prject
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="heading-secondary">
+        Love to hear from you, <br />
+        <span class="highlight">Get in touch</span>👋
+      </h2>
+
+      <div class="contact-content grid grid-col-2">
+        <div class="address">
+          <h3>Address</h3>
+
+          <ul>
+            <li>
+              <span><ion-icon name="location-outline"></ion-icon></span>UAE,
+              Dubai, Dubai Outsource City
+            </li>
+            <li>
+              <span><ion-icon name="mail-outline"></ion-icon></span
+              >me@mohamedadam.com
+            </li>
+            <li>
+              <span><ion-icon name="call-outline"></ion-icon> </span
+              >+971544314461
+            </li>
+          </ul>
+
+          <div class="socail-icons">
+            <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+            <a href="#"> <ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="contactForm">
+          <form action="">
+            <div class="input-group">
+              <p>
+                <span><ion-icon name="person-outline"></ion-icon></span>
+                <input
+                  type="text"
+                  name="first name"
+                  id="firstName"
+                  placeholder="First name"
+                />
+              </p>
+
+              <p>
+                <span><ion-icon name="person-outline"></ion-icon></span>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Last name"
+                />
+              </p>
+            </div>
+
+            <div class="input-group">
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </p>
+              <p>
+                <span><ion-icon name="document-text-outline"></ion-icon></span>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+              </p>
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Send now" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <ul class="sections-links">
+      <li><a href="#hero">&nbsp;</a></li>
+      <li><a href="#skills" class="active">&nbsp;</a></li>
+      <li><a href="#academic">&nbsp;</a></li>
+      <li><a href="#portfolio">&nbsp;</a></li>
+      <li><a href="#contact">&nbsp;</a></li>
+    </ul>
+  </body>
+</html>
