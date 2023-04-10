@@ -187,4 +187,15 @@
   .lanugages {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .socail-icons {
+    margin-bottom: 4rem;
+  }
+  .portfolio article img {
+    width: 100%;
+  }
+
+  .website-description {
+    width: 100%;
+  }
 }

@@ -20,6 +20,8 @@ body {
 
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+
+  overflow-x: hidden;
 }
 
 .container {
@@ -529,6 +531,10 @@ span.typed-cursor.typed-cursor--blink {
   /* width: 80%; */
 }
 
+.contact .heading-secondary {
+  margin-bottom: 6rem;
+}
+
 .input-group {
   display: flex;
   align-items: center;
@@ -551,6 +557,7 @@ textarea {
   border: none;
   outline: none;
   color: var(--color-text);
+  width: 90%;
 }
 .input-group input::placeholder,
 .input-group p ion-icon {
@@ -570,9 +577,10 @@ form input[type="submit"] {
 textarea {
   background-color: transparent;
   border: 1px solid #16445a;
-
   border-radius: 10px;
   padding: 0.8rem 0.5rem;
+  resize: none;
+  width: 100%;
 }
 
 /***************Animation*******************/
